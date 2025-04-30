@@ -101,7 +101,7 @@ h1, h2, h3, h4, h5,
     box-shadow: none !important; }
 
 .site-section {
-  padding: 2.5em 0; }
+  padding: 2em 0; }
   @media (min-width: 768px) {
     .site-section {
       padding: 5em 0; } }
@@ -143,7 +143,7 @@ h1, h2, h3, h4, h5,
   background: #333333; }
   @media (min-width: 768px) {
     .site-footer {
-      padding: 8em 0; } }
+      padding: 3em 0; } }
   .site-footer .border-top {
     border-top: 1px solid rgba(255, 255, 255, 0.1) !important; }
   .site-footer p {
@@ -1384,3 +1384,24 @@ h1, h2, h3, h4, h5,
 .custom-pagination span {
   background: #e6e6e6;
   color: #000; }
+
+  .center-mobile {
+    text-align: center;
+  }
+  
+  @media (max-width: 767.98px) {
+    .center-mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .center-mobile ul.list-unstyled {
+      display: inline-block;
+      text-align: center; /* Keeps the list items aligned left within the centered block */
+    }
+  
+    .center-mobile a {
+      display: inline-block;
+    }
+  }
