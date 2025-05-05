@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Exit Air Cargo &mdash;  </title>
+    <title>Exit Air Cargo — Services</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -17,12 +17,70 @@
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
 
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
     <link rel="stylesheet" href="css/aos.css">
 
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+    .service-card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+.service-card:hover {
+  transform: translateY(-5px);
+}
+.unit-4 {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.unit-4-icon {
+  margin-bottom: 20px;
+  margin-right: 0;
+}
+.unit-4-icon span {
+  font-size: 60px;
+}
+ul.list-unstyled {
+  padding: 0;
+  margin: 15px auto;
+  max-width: 600px; /* Limits list width for better centering */
+  list-style: none; /* Ensures no default bullets */
+}
+ul.list-unstyled li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+  text-align: left; /* Aligns text and bullet left within the centered container */
+  position: relative;
+  padding-left: 20px; /* Space for bullet */
+  display: flex; /* Ensures bullet and text stay together */
+  align-items: flex-start; /* Vertically aligns bullet with text */
+}
+ul.list-unstyled li::before {
+  content: "•"; /* Bullet character */
+  color: #f1de0d; /* Matches text-primary */
+  font-size: 14px; /* Smaller bullet */
+  margin-right: 8px; /* Space between bullet and text */
+  line-height: 24px; /* Aligns with text */
+  flex-shrink: 0; /* Prevents bullet from shrinking */
+}
+footer ul {
+  list-style: none;
+  /* padding-left: 0; */
+  margin: 0;
+}
+footer ul li::before {
+  content: none !important;
+}
+
+    </style>
     
   </head>
   <body>
@@ -50,183 +108,101 @@
             <nav class="site-navigation position-relative text-right" role="navigation">
 
               <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
-                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li class="has-children">
+                <li class="has-children active">
                   <a href="services.html">Services</a>
-                  <ul class="dropdown">
-                    <li><a href="#">Air Freight</a></li>
-                    <li><a href="#">Ocean Freight</a></li>
-                    <li><a href="#">Ground Shipping</a></li>
+                 <ul class="dropdown">
+                    <li><a href="/services.html#air-freight">Air Freight</a></li>
+                    <li><a href="/services.html#ocean-freight">Ocean Freight</a></li>
+                    <li><a href="/services.html#land-freight">Land Freight</a></li>
                     
                   </ul>
                 </li>
-                <!-- <li><a href="industries.html">Industries</a></li>
-                <li><a href="blog.html">Blog</a></li> -->
                 <li><a href="contact.html">Contact</a></li>
               </ul>
             </nav>
           </div>
 
-
           <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
-
-          </div>
 
         </div>
       </div>
       
     </header>
 
-  
-
     <div class="site-blocks-cover inner-page-cover overlay" style="background-image: url(images/hero_bg_new_1.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
       <div class="container">
         <div class="row align-items-center justify-content-center text-center">
-
           <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
             <h1 class="text-white font-weight-light text-uppercase font-weight-bold">Our Services</h1>
-            <p class="breadcrumb-custom"><a href="index.html">Home</a> <span class="mx-2">&gt;</span> <span>Services</span></p>
+            <p class="breadcrumb-custom"><a href="index.html">Home</a> <span class="mx-2">></span> <span>Services</span></p>
           </div>
         </div>
       </div>
     </div>  
 
-    
-
     <div class="site-section bg-light">
       <div class="container">
         <div class="row align-items-stretch">
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-travel"></span></div>
-              <div>
-                <h3>Air Air Freight</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
+          <div class="col-md-12 mb-4 mb-lg-4" id="air-freight">
+            <div class="service-card">
+              <div class="unit-4 d-flex">
+                <div class="unit-4-icon"><span class="text-primary flaticon-travel"></span></div>
+                <div>
+                  <h3>Air Freight</h3>
+                  <p>Exit Air Cargo FZE is committed to delivering tailored air freight solutions to businesses of all scales. Recognizing the premium nature of air transport, we prioritize efficiency, seamless communication, and swift transit times. With a global reach spanning major continents, our services are designed to meet the dynamic needs of modern logistics.</p>
+                  <ul class="list-unstyled">
+                    <li>Airport to Airport</li>
+                    <li>Consolidation</li>
+                    <li>Pharma Handling</li>
+                    <li>Air Charter Service</li>
+                    <li>Luxury Car Handling</li>
+                    <li>Heavy & ODD Size Cargo Service</li>
+                    <li>Air – Sea Shipment</li>
+                    <li>Export/Import Documentation</li>
+                    <li>Prompt Arrival Notice</li>
+                    <li>Air Freight Express and Valuables</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-sea-ship-with-containers"></span></div>
-              <div>
-                <h3>Ocean Freight</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
+          <div class="col-md-12 mb-4 mb-lg-4" id="ocean-freight">
+            <div class="service-card">
+              <div class="unit-4 d-flex">
+                <div class="unit-4-icon"><span class="text-primary flaticon-sea-ship-with-containers"></span></div>
+                <div>
+                  <h3>Ocean Freight</h3>
+                  <p>Exit Air Cargo LLC, leveraging its extensive global network, is strategically equipped to manage every stage of your shipment from origin to destination. Our comprehensive suite of ocean freight solutions includes Ocean Forwarding, Full Container Load (FCL) and Less than Container Load (LCL) Consolidation, Multi-Country Consolidation, and integrated Sea/Air services—ensuring flexibility and efficiency tailored to your logistics needs.</p>
+                  <ul class="list-unstyled">
+                    <li>Port to Port</li>
+                    <li>LCL Consolidation</li>
+                    <li>Export/Import Documentation</li>
+                    <li>Cargo Tracking & Tracing</li>
+                    <li>Sea - Air Shipment</li>
+                    <li>FCL - Import and Export</li>
+                    <li>Sea - Ro – Ro</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-frontal-truck"></span></div>
-              <div>
-                <h3>Ground Shipping</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
+          <div class="col-md-12 mb-4 mb-lg-4" id="land-freight">
+            <div class="service-card">
+              <div class="unit-4 d-flex">
+                <div class="unit-4-icon"><span class="text-primary flaticon-frontal-truck"></span></div>
+                <div>
+                  <h3>Land Freight</h3>
+                  <p>As a branch of a premier land transportation company in UAE, we specialize in delivering efficient and innovative solutions in land freight transportation. Our commitment to reliability ensures that shipments arrive safely and on time. Backed by a team of highly qualified transport operators, we provide exceptional service tailored to meet diverse logistics needs.</p>
+                </div>
               </div>
             </div>
           </div>
-
-
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-barn"></span></div>
-              <div>
-                <h3>Warehousing</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-platform"></span></div>
-              <div>
-                <h3>Storage</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-car"></span></div>
-              <div>
-                <h3>Delivery Van</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
     </div>
-    
-    <!-- <div class="site-section border-bottom">
-      <div class="container">
 
-        <div class="row justify-content-center mb-5">
-          <div class="col-md-7 text-center border-primary">
-            <h2 class="font-weight-light text-primary">Testimonials</h2>
-          </div>
-        </div>
-
-        <div class="slide-one-item home-slider owl-carousel">
-          <div>
-            <div class="testimonial">
-              <figure class="mb-4">
-                <img src="images/person_3.jpg" alt="Image" class="img-fluid mb-3">
-                <p>John Smith</p>
-              </figure>
-              <blockquote>
-                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
-              </blockquote>
-            </div>
-          </div>
-          <div>
-            <div class="testimonial">
-              <figure class="mb-4">
-                <img src="images/person_2.jpg" alt="Image" class="img-fluid mb-3">
-                <p>Christine Aguilar</p>
-              </figure>
-              <blockquote>
-                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
-              </blockquote>
-            </div>
-          </div>
-
-          <div>
-            <div class="testimonial">
-              <figure class="mb-4">
-                <img src="images/person_4.jpg" alt="Image" class="img-fluid mb-3">
-                <p>Robert Spears</p>
-              </figure>
-              <blockquote>
-                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
-              </blockquote>
-            </div>
-          </div>
-
-          <div>
-            <div class="testimonial">
-              <figure class="mb-4">
-                <img src="images/person_5.jpg" alt="Image" class="img-fluid mb-3">
-                <p>Bruce Rogers</p>
-              </figure>
-              <blockquote>
-                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
-              </blockquote>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div> -->
-
-    
-    
     <footer class="site-footer">
       <div class="container">
         <div class="row justify-content-center">
@@ -254,9 +230,9 @@
               <div class="col-md-3 center-mobile">
                 <h2 class="footer-heading mb-4">Follow Us</h2>
                 <div class="d-flex flex-row">
-                  <a href="#" class="p-2"><span class="icon-facebook"></span></a>
-                  <a href="#" class="p-2"><span class="icon-instagram"></span></a>
-                  <a href="#" class="p-2"><span class="icon-linkedin"></span></a>
+                  <a href="https://www.threads.net/@exitaircargo" class="p-2"><i class="fab fa-threads"></i></a>
+                  <a href="https://www.instagram.com/exitaircargo?igsh=MXcyczJ0aHAzaXE2cw==" class="p-2"><span class="icon-instagram"></span></a>
+                  <a href="https://www.linkedin.com/company/exitaircargofze/" class="p-2"><span class="icon-linkedin"></span></a>
                 </div>
               </div>
               <div class="col-md-1">
