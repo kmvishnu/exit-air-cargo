@@ -1405,3 +1405,117 @@ h1, h2, h3, h4, h5,
       display: inline-block;
     }
   }
+
+  /* Add these rules to your style.css file */
+
+/* Fix horizontal overflow issues */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure all content stays within the viewport */
+.container {
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Fix for carousel on mobile */
+.owl-carousel {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* Fix for images and other media */
+img, iframe, video, object {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make sure footer is responsive */
+.site-footer {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* Additional responsive fixes */
+@media (max-width: 768px) {
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  [class*="col-"] {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .unit-4 {
+    padding: 0 10px;
+  }
+
+}
+
+
+/* Fix for hamburger menu on very small screens */
+@media (max-width: 366px) {
+  /* Make logo smaller on very small screens */
+  .site-navbar h1 a img {
+    height: 50px !important;
+  }
+  
+  /* Ensure the hamburger menu stays in position */
+  .d-inline-block.d-xl-none {
+    position: absolute !important;
+    right: 15px;
+    top: 25px;
+  }
+  
+  /* Add some space for the menu toggle */
+  .site-navbar .container {
+    position: relative;
+    padding-right: 40px;
+  }
+}
+
+/* Styling for the contact form heading */
+.site-section .text-primary .fa-envelope {
+  margin-right: 10px;
+  font-size: 0.9em;
+}
+
+/* Optional: Add a subtle animation to the icon */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.site-section .text-primary .fa-envelope {
+  animation: pulse 2s infinite;
+  display: inline-block;
+}
+
+/* Make the form stand out more */
+.site-section form.bg-white {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border-radius: 4px;
+}
+
+/* Style the submit button */
+.site-section input[type="submit"] {
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.site-section input[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}

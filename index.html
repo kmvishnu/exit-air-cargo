@@ -175,7 +175,7 @@
             <img src="images/img_2.jpg" alt="Image" class="img-fluid">
             <div class="unit-1-text">
               <h3 class="unit-1-heading">Air Transports</h3>
-              <p class="px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempore ullam minus voluptate libero.</p>
+              <!-- <p class="px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempore ullam minus voluptate libero.</p> -->
             </div>
           </a>
         </div>
@@ -185,7 +185,7 @@
             <img src="images/img_3.jpg" alt="Image" class="img-fluid">
             <div class="unit-1-text">
               <h3 class="unit-1-heading">Cargo Transports</h3>
-              <p class="px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempore ullam minus voluptate libero.</p>
+              <!-- <p class="px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempore ullam minus voluptate libero.</p> -->
             </div>
           </a>
         </div>
@@ -195,7 +195,7 @@
             <img src="images/img_4.jpg" alt="Image" class="img-fluid">
             <div class="unit-1-text">
               <h3 class="unit-1-heading">Cargo Ship</h3>
-              <p class="px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempore ullam minus voluptate libero.</p>
+              <!-- <p class="px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempore ullam minus voluptate libero.</p> -->
             </div>
           </a>
         </div>
@@ -218,7 +218,11 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-9 mb-5">
-
+        <div class="text-center mb-4">
+          <h3 class="text-primary">
+            <i class="fa fa-envelope" aria-hidden="true"></i> Send Us a Message
+          </h3>
+        </div>
             
 
             <form action="https://formspree.io/f/mkgrgwzo"
@@ -227,7 +231,7 @@
         <div class="row form-group">
           <div class="col-md-6 mb-3 mb-md-0">
             <label class="text-black" for="fname">First Name</label>
-            <input type="text" id="fname" name="first_name" class="form-control">
+            <input type="text" id="fname" name="first_name" class="form-control" required>
           </div>
           <div class="col-md-6">
             <label class="text-black" for="lname">Last Name</label>
@@ -238,7 +242,7 @@
         <div class="row form-group">
           <div class="col-md-12">
             <label class="text-black" for="email">Email</label> 
-            <input type="email" id="email" name="email" class="form-control">
+            <input type="email" id="email" name="email" class="form-control" required>
           </div>
         </div>
       
@@ -252,13 +256,13 @@
         <div class="row form-group">
           <div class="col-md-12">
             <label class="text-black" for="message">Message</label> 
-            <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Write your notes or questions here..."></textarea>
+            <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Write your notes or questions here..." required></textarea>
           </div>
         </div>
       
         <div class="row form-group">
           <div class="col-md-12">
-            <input type="submit" value="Send Message" class="btn btn-primary py-2 px-4 text-white">
+            <input type="submit" value="Send" class="btn btn-primary py-2 px-4 text-white">
           </div>
         </div>
       
